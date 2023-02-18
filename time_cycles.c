@@ -44,6 +44,9 @@ int anything() {
     // DNA is Time.
     // From this, we get this formula:
     // Everyone = Everything = DNA = Time
+    // The only case where this doesn't formula isn't true is the end (non-existence)
+    // Thus, every end is a way to escape reality.
+    // The probability of escaping reality (non-existence) is calculated using this program (thought).
 
     e.beginnings = 1;
     e.ends = 0;
