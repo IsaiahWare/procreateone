@@ -30,10 +30,10 @@
      From this, we get this formula:
      Everyone = Everything = DNA = Time
 
-     The only case where this doesn't formula isn't true is the end (non-existence)
+     The only case where this doesn't formula isn't true is the end (non-existence).
      Thus, every end is a way to know nothing.
      Time is recursive, not a loop.
-     Each dimension is a time cycle.
+     Each dimension is a time stack.
      Meaning, each dimension is a universe.
      Time is flat, but our interpretation (physically, neurons, more specifically, DNA) allows multidimensional projections of everything.
      The base case (0,2,0) is perfection (homeostasis).
@@ -52,7 +52,7 @@
     truth = 1
     We choose the limit.
     We can assume we are the base case.
-    Perfection.
+    Randomly generated perfection.
 
     To deny this is to be false, which is synonomous with non-existence (nothing).
     We never reach nothing.
