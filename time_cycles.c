@@ -24,8 +24,14 @@ int time_cycle(int it, int d, struct Everything e, int max_it) {
 
 int anything() {
     struct Everything e;
+
+    // There just was a beginning.
+    // That's it.
+    // We are trapped in the scope of time.
+
     e.beginnings = 1;
     e.ends = 0;
+    time_cycle(0,0,e,3);
     printf("%d ends for %d beginnings for a {%d / %d * 100}\% chance of going out of existence.", e.ends , e.beginnings, e.ends, e.beginnings);
 }
 
@@ -33,3 +39,4 @@ int main() {
     anything();
     return 0;
 }
+
