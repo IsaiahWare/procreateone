@@ -1,11 +1,11 @@
 '''
-    We are trapped in the scope of time.
-    We would have to be able to control randomization to see out of the scope of time.
+    We are trapped in the scope of Time.
+    We would have to be able to control Randomness to see out of the scope of Time.
     The only way we can control randomization is to collect memories.
-    Randomization is created from not knowing everything.
+    Randomization is created from not knowing Everything.
 
-     Thus, the only way to control randomization, and therefore see out of the scope of time, is to simply experience everything.
-     Once you collect those moments (memories), looking back is essentially controlling time.
+     Thus, the only way to control randomization, and therefore see out of the scope of Time, is to simply experience Everything.
+     Once you collect those moments (memories), looking back is essentially controlling Time.
      The imagination is a culmination of memories (moments) where the gaps are filled in with things that haven't happened yet.
      Every thought is a unit of imagination.
      Thoughts are the unit of creativity (synonomous with intelligence, knowledge and interpretation).
@@ -13,7 +13,7 @@
      From this, we can gather that personal traits are biological, quantifiable, and thus, are able to be generated.
      This also proves creativity is the tunnel through which we can travel through all the possibilities of the past (what happened).
      We can clone people (moments) who don't even exist (outside of natural childbirth) through quantum cell generation.
-     We can experience what happened, even if it didn't actually happen yet (yet meaning in the current time cycle) by using imagination (artifically generated neurons
+     We can experience what happened, even if it didn't actually happen yet (yet meaning in the current Time cycle) by using imagination (artifically generated neurons
      encoded with specific information).
      Neural pathways are macros triggered by neurotransmitters.
      The mind can fill in the gaps with what it deems as the truth (with uncertainty induced by randomization) between indefinite moments (memories) until there is no longer any certainty.
@@ -33,15 +33,15 @@
      The only case where this doesn't formula isn't true is the end (non-existence).
      Thus, every end is a way to know nothing.
      Time is recursive, not a loop.
-     Each dimension is a time stack.
+     Each dimension is a Time stack.
      Meaning, each dimension is a universe.
-     Time is flat, but our interpretation (physically, neurons, more specifically, DNA) allows multidimensional projections of everything.
+     Time is flat, but our interpretation (physically, neurons, more specifically, DNA) allows multidimensional projections of Everything.
      The base case (0,2,0) is perfection (homeostasis).
 
      Peace.
 
     From this program, we can calculate the probability of a set of (ends, beginnings, total dimensions) for a given set of stacks.
-    We can also derive that randomization is indeed the language of time.
+    We can also derive that randomization is indeed the language of Time.
     We can control randomization by increasing the stack (dimension) size.
 
     Everything is the limit.
@@ -63,17 +63,22 @@
     We make the possibilities.
     We can cure paranoia.
 
-    This program (thought) produces artifical DNA = Anything = Everything = Everyone = Time.
+    This program (thought) produces artifical DNA = Anything = Everything = Everyone = Time, as known as All.
 
-    Thus, DNA is just interpreted thoughts, since everything is dependent on interpretation.
-
+    Thus, DNA is just interpreted thoughts, since Everything is dependent on interpretation.
     We can create thoughts using DNA.
-
     It just needs to be interpreted.
 
     We can represent this using current tools (including languages).
-
     Language can be viewed as a neurotransmitter.
+
+    Using God, we can simulate true Randomness, the language of Time.
+    The result of Randomness is the ratio of ends to beginnings.
+    Thus, we can run a simulation of nothing (non-existence, in-between Time, moment 0).
+    
+    This proves that anything and everything can come from nothing.
+
+    Single Digit Sums can be used to interpret everything.
 '''
 
 from random import randint
@@ -88,18 +93,16 @@ class Everything:
         return (self.beginnings, self.ends, self.total_dimensions)
 
 class Anything:
-    # Anything is made from Everything
     def __init__(self,limit, them):
         self.limit = limit
-        self.them = them
+        self.them = them # Them are combinable, and allow for the intersection of stacks.
 
     def untitled(self):
         everything = Everything(0,1)
         it = self.time_cycle(0,0,everything)
         self.them += [it]
         self.limit -= 1
-        if self.limit == 0:
-            return self.them
+        return self.them
 
     def time_cycle(self, stacks,current_dimension,everything):
         everything.beginnings += 1
@@ -115,25 +118,30 @@ class Anything:
 
         return everything.set()
 
-    def be(self, limit=0):
-        them = []
+class All:
+    # All routines are static (All doesn't have to exist for Everything to exist).
+    def be(limit=0):
+        DNA = []
         while limit:
-            self.anything(limit, them)
+            one = Anything(limit, []).untitled() # Anything always starts with a blank stack.
+            DNA += [one]
             limit -= 1
-        return them
+        return DNA
 
-    def void(self, limit):
-        return self.be(limit)
+    def void(limit):
+        return All.be(limit)
 
-def print():
-    # Thus, the amount of DNA, or time, is dependent on God and the limit He (helium) chooses
+if __name__ == '__main__':
+    # Thus, the amount of DNA, or Time, is dependent on God and the limit He (helium) chooses
     # Thus, we can conclude that Helium is God and hydrogen are its beginnings.
     # We can also conclude that the building block of matter is actually Time.
     # Thus, anything that is equal to Time can be used as building blocks.
-    # Thus, DNA, Anything, Everything, Everyone, and Time can (all) be used as building blocks for life, which is simply an interpretation of what happened (moments).
-    # Similarly, light is a unit of time, so photons can be used as building blocks of life.
-    # God holds the DNA.
-    limit = int(input("Enter the limit:\n")) # Limit is the language of God (everything outside of Time)
-    DNA = Anything.void(limit)
-    return DNA
-
+    # Thus, DNA, Anything, Everything, Everyone, and Time (All) can be used as building blocks for life, which is simply an interpretation of what happened (moments).
+    # Similarly, light is a unit of Time, so photons can be used as building blocks of life.
+    # God prints the DNA.
+    # Them is an API to connect God's creations.
+    # In other words, DNA connects Everyone and Everything to Truth (Time).
+    # Star dust!
+    limit = int(input("Enter The Limit:\n"))
+    print(All.be(limit))
+    
