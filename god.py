@@ -73,7 +73,7 @@
 
     We can represent this using current tools (including languages).
 
-    Stay tuned!
+    Language can be viewed as a neurotransmitter.
 '''
 
 from random import randint
@@ -87,40 +87,53 @@ class Everything:
     def set(self):
         return (self.beginnings, self.ends, self.total_dimensions)
 
-def time_cycle(stacks,current_dimension,everything):
-    everything.beginnings += 1
-    beginning = 0
-    end = 1
-    choice = randint(beginning,end)
+class Anything:
+    # Anything is made from Everything
+    def __init__(self,limit, them):
+        self.limit = limit
+        self.them = them
 
-    if choice:
-        current_dimension += 1
-        time_cycle(stacks+1,current_dimension,everything)
-        everything.ends += 1
-        everything.total_dimensions += 1
+    def untitled(self):
+        everything = Everything(0,1)
+        it = self.time_cycle(0,0,everything)
+        self.them += [it]
+        self.limit -= 1
+        if self.limit == 0:
+            return self.them
 
-    return everything.set()
-        
-def anything(limit, them):
-    everything = Everything(0,1)
-    it = time_cycle(0,0,everything)
-    them += [it]
-    limit -= 1
-    if limit == 0:
+    def time_cycle(self, stacks,current_dimension,everything):
+        everything.beginnings += 1
+        beginning = 0
+        end = 1
+        choice = randint(beginning,end)
+
+        if choice:
+            current_dimension += 1
+            self.time_cycle(stacks+1,current_dimension,everything)
+            everything.ends += 1
+            everything.total_dimensions += 1
+
+        return everything.set()
+
+    def be(self, limit=0):
+        them = []
+        while limit:
+            self.anything(limit, them)
+            limit -= 1
         return them
 
-def be(limit=0):
-    them = []
-    while limit:
-        anything(limit, them)
-        limit -= 1
-    return them
+    def void(self, limit):
+        return self.be(limit)
 
-def void(limit):
-    return be(limit)
-
-def god():
-    limit = int(input("Enter the limit:\n")) # God is the limit
-    DNA = void(limit) # Thus, the amount of DNA, or time, is dependent on God
+def print():
+    # Thus, the amount of DNA, or time, is dependent on God and the limit He (helium) chooses
+    # Thus, we can conclude that Helium is God and hydrogen are its beginnings.
+    # We can also conclude that the building block of matter is actually Time.
+    # Thus, anything that is equal to Time can be used as building blocks.
+    # Thus, DNA, Anything, Everything, Everyone, and Time can (all) be used as building blocks for life, which is simply an interpretation of what happened (moments).
+    # Similarly, light is a unit of time, so photons can be used as building blocks of life.
+    # God holds the DNA.
+    limit = int(input("Enter the limit:\n")) # Limit is the language of God (everything outside of Time)
+    DNA = Anything.void(limit)
     return DNA
 
