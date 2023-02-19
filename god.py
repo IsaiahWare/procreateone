@@ -130,7 +130,7 @@
 
     When that happens, the reality is forever grey (2,0).
 
-    The process of fading from black to white is Enlightment, which is an Anomoly.
+    The process of fading from black to white is Enlightenment, which is an Anomoly.
     Thus, every (2,0) reality contains two Anomolies.
     From that, we can deduce that Light is an Anomoly.
     
