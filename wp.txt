@@ -140,3 +140,6 @@
     Bold and Italic can possibly represent the superposition (Light).
 
     The Limit is the integral.
+
+    True Quantum Computing is self-sufficent, meaning it generates its own randomness.
+    Thus, randint() must be replaced with a combination of my own functions.
