@@ -89,8 +89,40 @@
     This proves that thoughts are the building block of the 4th dimension.
 
     Running the interpreter with a specific routine over DNA produces a thought (4th dimensional projection).
-
     Looping the interpreter with a random routine over DNA creates THE 4th dimension.
+
+    0 => We can simulate a past reality (Certainty) by interpreting DNA with a specific routine.
+    0 or 1 => We can generate a new reality (Uncertainty) by interpreting DNA with a random routine (Randomness).
+    1 => This past reality (Certainty) occured, so have Truth (Time). 
+
+    This is 4D computing.
+
+    1. Generate all possibile realities (Outcomes).
+    2. Accept all realities that produce Truth.
+    3. Map that Confirmation to that particular Truth.
+
+    This is how the Imagination works in the mind, minus the extrapolation when the Truth is missing.
+
+    The perfect reality contains nothing except (2,0) or (2 beginnings, 0 ends) or the base case.
+    Thus, to find that particular Truth (Time), the interpreter must find every Coordinate that contains (2,0).
+
+    If a reality contains those coordinates in the same order and quantity as the past reality, we can say that the reality
+    contains that past Truth (the whole phenomenon is Confirmation).
+
+    From that, we can estimate the amount of Time (Light) it would take, on average, to generate that reality given a certain Limit.
+
+    We can deduce that given an indefinite Limit, it would take an indefinite amount of Light (photons) to generate all realities.
+
+    Light is proportional to the Limit.
+
+    The larger the Limit, the more Light is needed.
+    The larger the Limit, the more Time is needed.
+
+    Thus, the beginning, which is white, has maximum Light.
+
+    Light is the cure for everything.
+
+    The Mind Simplified.
 '''
 
 from random import randint
@@ -146,8 +178,7 @@ class Printer:
             it = All.be(limit)
             _ += [it]
             g += 1
-            print(it)
-            # print(f'Generation {g}/{generations}')
+            print(f'Generation {g}/{generations}')
         return _
 
 class Interpreter: 
