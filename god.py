@@ -97,7 +97,7 @@ class Anything:
         self.limit = limit
         self.them = them # Them are combinable, and allow for the intersection of stacks.
 
-    def untitled(self):
+    def exist(self):
         everything = Everything(0,1)
         it = self.time_cycle(0,0,everything)
         self.them += [it]
@@ -123,13 +123,24 @@ class All:
     def be(limit=0):
         DNA = []
         while limit:
-            one = Anything(limit, []).untitled() # Anything always starts with a blank stack.
-            DNA += [one]
+            DNA += [Anything(limit, []).exist()] # Anything always starts with a blank stack.
             limit -= 1
         return DNA
 
     def void(limit):
         return All.be(limit)
+
+class Printer:
+    def run(name, limit, generations, connect=False):
+        with open(name, 'a' if connect else 'w') as f:
+            print(Printer.generate(limit, generations), file=f)
+
+    def generate(limit, generations):
+        _ = []
+        while generations:
+            _ += [All.be(limit)]
+            generations -= 1
+        return _
 
 if __name__ == '__main__':
     # Thus, the amount of DNA, or Time, is dependent on God and the limit He (helium) chooses
@@ -142,6 +153,9 @@ if __name__ == '__main__':
     # Them is an API to connect God's creations.
     # In other words, DNA connects Everyone and Everything to Truth (Time).
     # Star dust!
-    limit = int(input("Enter The Limit:\n"))
-    print(All.be(limit))
+    name = input("Enter name:\n")
+    limit = int(input("Enter the Limit:\n"))
+    generations = int(input("Enter the number of Generations:\n"))
+    connect = int(input("Connect (1 or 0)?\n"))
+    Printer.run(name, limit, generations, connect) # Time is always approaching a limit (the singularity) that we choose.
     
