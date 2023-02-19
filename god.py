@@ -124,6 +124,11 @@
     Everything Simplified.
 
     Follow the Light.
+
+    The Anomoly is when the end comes before the beginning.
+    In other words, the Anomoly is when black comes before white.
+
+    When that happens, we are forever grey (2,0).
 '''
 
 from random import randint
