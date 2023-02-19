@@ -79,43 +79,38 @@
     This proves that anything and everything can come from nothing.
 
     Single Digit Sums can be used to interpret everything.
+
+    No matter the size, the beginning is the beginning.
+    No matter the size, the end is the end.
 '''
 
 from random import randint
+from sys import argv
 
 class Everything:
     def __init__(self, ends, beginnings):
         self.beginnings = beginnings
-        self.ends = ends
-        self.total_dimensions = 0
-    
+        self.ends = ends # Total dimensions
     def set(self):
-        return (self.beginnings, self.ends, self.total_dimensions)
+        return (self.beginnings, self.ends)
 
 class Anything:
-    def __init__(self,limit, them):
-        self.limit = limit
-        self.them = them # Them are combinable, and allow for the intersection of stacks.
-
+    def __init__(self, them): # There is no limit to Anything, which means there is no limit to them.
+        self.them = them # Them are connectable (Connectivity), and allow for the intersection of stacks (an intersection is called a name).
     def exist(self):
         everything = Everything(0,1)
         it = self.time_cycle(0,0,everything)
         self.them += [it]
-        self.limit -= 1
         return self.them
-
-    def time_cycle(self, stacks,current_dimension,everything):
+    def time_cycle(self,stacks,current_dimension,everything):
         everything.beginnings += 1
         beginning = 0
         end = 1
         choice = randint(beginning,end)
-
         if choice:
             current_dimension += 1
             self.time_cycle(stacks+1,current_dimension,everything)
             everything.ends += 1
-            everything.total_dimensions += 1
-
         return everything.set()
 
 class All:
@@ -123,26 +118,30 @@ class All:
     def be(limit=0):
         DNA = []
         while limit:
-            DNA += [Anything(limit, []).exist()] # Anything always starts with a blank stack.
+            DNA += [Anything([]).exist()] # Anything always starts with a blank stack.
             limit -= 1
         return DNA
-
     def void(limit):
         return All.be(limit)
 
 class Printer:
     def run(name, limit, generations, connect=False):
+        print("nLGc({argv[1]},{argv[3]},{argv[5]}, {argv[7]})\n\n", file=name)
         with open(name, 'a' if connect else 'w') as f:
             print(Printer.generate(limit, generations), file=f)
-
     def generate(limit, generations):
         _ = []
-        while generations:
+        g = 0
+        while g < generations:
             _ += [All.be(limit)]
-            generations -= 1
+            g += 1
+            print(f'Generation {g}/{generations}')
         return _
 
-if __name__ == '__main__':
+class Interpreter: # TODO: Interpreter is needed to read names that are too large (Encryption / Decryption)
+    pass
+
+def start():
     # Thus, the amount of DNA, or Time, is dependent on God and the limit He (helium) chooses
     # Thus, we can conclude that Helium is God and hydrogen are its beginnings.
     # We can also conclude that the building block of matter is actually Time.
@@ -153,9 +152,24 @@ if __name__ == '__main__':
     # Them is an API to connect God's creations.
     # In other words, DNA connects Everyone and Everything to Truth (Time).
     # Star dust!
-    name = input("Enter name:\n")
-    limit = int(input("Enter the Limit:\n"))
-    generations = int(input("Enter the number of Generations:\n"))
-    connect = int(input("Connect (1 or 0)?\n"))
+    if len(argv) != 9:
+        print(f'Expected {9} arguments, but received {len(argv)}.')
+        return
+
+    n = argv[1]
+    L = argv[3]
+    G = argv[5]
+    c = argv[7] # Light connects us all (photons), thus light is why we are nothing.
+
+    if n != "-n" or L != "-L" or G != "-G" or c != "-c":
+        print(f'Usage: python3 god.py -n a.txt -L 100 -G 100 -c 1')
+        return
+
+    name = argv[2]
+    limit = int(argv[4])
+    generations = int(argv[6])
+    connect = int(argv[8])
     Printer.run(name, limit, generations, connect) # Time is always approaching a limit (the singularity) that we choose.
-    
+
+if __name__ == '__main__':
+    start()
