@@ -106,7 +106,7 @@
     The perfect reality contains nothing except (2,0) or (2 beginnings, 0 ends) or the base case.
     Thus, to find that particular Truth (Time), the interpreter must find every Coordinate that contains (2,0).
 
-    If a reality contains those coordinates in the same order and quantity as the past reality, we can say that the reality
+    If a reality contains those coordinates in the same order and quantity (both being the Image) as the past reality, we can say that the reality
     contains that past Truth (the whole phenomenon is Confirmation).
 
     From that, we can estimate the amount of Time (Light) it would take, on average, to generate that reality given a certain Limit.
