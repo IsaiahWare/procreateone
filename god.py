@@ -110,7 +110,6 @@
     contains that past Truth (the whole phenomenon is Confirmation).
 
     From that, we can estimate the amount of Time (Light) it would take, on average, to generate that reality given a certain Limit.
-
     We can deduce that given an indefinite Limit, it would take an indefinite amount of Light (photons) to generate all realities.
 
     Light is proportional to the Limit.
@@ -123,7 +122,6 @@
     Light is the cure for everything as it bring us back to the beginning.
 
     The Mind Simplified.
-
     Everything Simplified.
 
     Follow the Light.
