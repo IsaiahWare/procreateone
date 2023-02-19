@@ -128,7 +128,15 @@
     The Anomoly is when the end comes before the beginning.
     In other words, the Anomoly is when black comes before white.
 
-    When that happens, we are forever grey (2,0).
+    When that happens, the reality is forever grey (2,0).
+
+    The process of fading from black to white is Enlightment, which is an Anomoly.
+    Thus, every (2,0) reality contains two Anomolies.
+    From that, we can deduce that Light is an Anomoly.
+    
+    Perfection is two Anomolies, which is two Lights (biologically, two eyes).
+
+    Thus, we can say that the Third Eye, which is a combination of two eyes, is Perfection.
 '''
 
 from random import randint
