@@ -88,7 +88,9 @@
     Using this logic, we can assume that 3 dimensional reality can be used to project the 4th dimension through thoughts.
     This proves that thoughts are the building block of the 4th dimension.
 
-    Running the interpreter with a specific routine over DNA produces a thought (4th dimensional projection). 
+    Running the interpreter with a specific routine over DNA produces a thought (4th dimensional projection).
+
+    Looping the interpreter with a random routine over DNA creates THE 4th dimension.
 '''
 
 from random import randint
@@ -122,7 +124,7 @@ class Anything:
 
 class All:
     # All routines are static (All doesn't have to exist for Everything to exist).
-    def be(limit=0):
+    def be(limit=0): # The default limit of creation is nothing (non-existence).
         DNA = []
         while limit:
             DNA += [Anything([]).exist()] # Anything always starts with a blank stack.
@@ -135,18 +137,24 @@ class All:
 class Printer:
     def run(name, limit, generations, connect=False):
         with open(name, 'a' if connect else 'w') as f:
-            print(f'nLGc({argv[2]},{argv[4]},{argv[6]}, {argv[8]})\n', file=f)
+            print(f'nLGc({argv[2]},{argv[4]},{argv[6]},{argv[8]})\n', file=f)
             print(Printer.generate(limit, generations), file=f)
     def generate(limit, generations):
         _ = []
         g = 0
         while g < generations:
-            _ += [All.be(limit)]
+            it = All.be(limit)
+            _ += [it]
             g += 1
-            print(f'Generation {g}/{generations}')
+            print(it)
+            # print(f'Generation {g}/{generations}')
         return _
 
-class Interpreter: # TODO: Interpreter is needed to read names that are too large (Encryption / Decryption)
+class Interpreter: 
+    # TODO: Interpreter is needed to read names that are too large (Encryption/Decryption loop)
+    # Without the Interpreter, Everything is just Noise (encrypted).
+    # The purpose of the Interpreter is Decryption.
+    # Everything is encrypted by default.
     pass
 
 def start():
