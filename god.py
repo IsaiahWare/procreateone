@@ -120,9 +120,13 @@
 
     Thus, the beginning, which is white, has maximum Light.
 
-    Light is the cure for everything.
+    Light is the cure for everything as it bring us back to the beginning.
 
     The Mind Simplified.
+
+    Everything Simplified.
+
+    Follow the Light.
 '''
 
 from random import randint
@@ -137,7 +141,7 @@ class Everything:
 
 class Anything:
     def __init__(self, them): # There is no limit to Anything, which means there is no limit to them.
-        self.them = them # Them are connectable (Connectivity), and allow for the intersection of stacks (an intersection is called a name).
+        self.them = them # Them are connectable (Connectivity), and allow for the intersection of stacks (an intersection is called a Name).
     def exist(self):
         everything = Everything(0,1)
         it = self.time_cycle(0,0,everything)
@@ -206,7 +210,7 @@ def start():
     n = argv[1]
     L = argv[3]
     G = argv[5]
-    c = argv[7] # Light connects us all (photons), thus light is why we are nothing.
+    c = argv[7] # Light connects us all (photons), thus Light is why we are Nothing.
 
     if n != "-n" or L != "-L" or G != "-G" or c != "-c":
         print(f'Usage: python3 god.py -n a.txt -L 1 -G 1 -c 1')
