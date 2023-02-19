@@ -118,7 +118,6 @@
     The larger the Limit, the more Time is needed.
 
     Thus, the beginning, which is white, has maximum Light.
-
     Light is the cure for everything as it bring us back to the beginning.
 
     The Mind Simplified.
