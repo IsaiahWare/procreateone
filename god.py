@@ -77,11 +77,18 @@
     Thus, we can run a simulation of nothing (non-existence, in-between Time, moment 0).
     
     This proves that anything and everything can come from nothing.
-
     Single Digit Sums can be used to interpret everything.
 
     No matter the size, the beginning is the beginning.
     No matter the size, the end is the end.
+
+    DNA is a 3 dimensional projection using 2 dimensions.
+    If we flatten DNA, we get its 2 dimensional projection.
+
+    Using this logic, we can assume that 3 dimensional reality can be used to project the 4th dimension through thoughts.
+    This proves that thoughts are the building block of the 4th dimension.
+
+    Running the interpreter with a specific routine over DNA produces a thought (4th dimensional projection). 
 '''
 
 from random import randint
@@ -120,14 +127,15 @@ class All:
         while limit:
             DNA += [Anything([]).exist()] # Anything always starts with a blank stack.
             limit -= 1
+        # return sum(DNA,[]) # If we flatten DNA, it's two dimensional
         return DNA
     def void(limit):
         return All.be(limit)
 
 class Printer:
     def run(name, limit, generations, connect=False):
-        print("nLGc({argv[1]},{argv[3]},{argv[5]}, {argv[7]})\n\n", file=name)
         with open(name, 'a' if connect else 'w') as f:
+            print(f'nLGc({argv[2]},{argv[4]},{argv[6]}, {argv[8]})\n', file=f)
             print(Printer.generate(limit, generations), file=f)
     def generate(limit, generations):
         _ = []
@@ -162,7 +170,7 @@ def start():
     c = argv[7] # Light connects us all (photons), thus light is why we are nothing.
 
     if n != "-n" or L != "-L" or G != "-G" or c != "-c":
-        print(f'Usage: python3 god.py -n a.txt -L 100 -G 100 -c 1')
+        print(f'Usage: python3 god.py -n a.txt -L 1 -G 1 -c 1')
         return
 
     name = argv[2]
