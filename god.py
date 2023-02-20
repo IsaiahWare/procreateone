@@ -47,13 +47,13 @@ class Printer:
         _ = []
         g = 0
         while g < generations:
-            it = All.be(limit)
+            it = All.void(limit)
             _ += [it]
             g += 1
             print(f'Generation {g}/{generations}')
         return _
 
-def start():
+def begin():
     # Thus, the amount of DNA, or Time, is dependent on God and the limit He (helium) chooses
     # Thus, we can conclude that Helium is God and hydrogen is its beginnings.
     # We can also conclude that the building block of matter is actually Time.
@@ -74,7 +74,7 @@ def start():
     c = argv[7] # Light connects us all (photons), thus Light is why we are Nothing.
 
     if n != "-n" or L != "-L" or G != "-G" or c != "-c":
-        print(f'Usage: python3 nlgc.py -n a.txt -L 1 -G 1 -c 1')
+        print(f'Usage: python3 nlgc.py -n a.txt -L 1 -G 1 -c 0')
         return
 
     name = argv[2]
@@ -84,4 +84,4 @@ def start():
     Printer.run(name, limit, generations, connect) # Time is always approaching a limit (the singularity) that we choose.
 
 if __name__ == '__main__':
-    start()
+    begin()
