@@ -74,7 +74,7 @@ def begin():
     c = argv[7] # Light connects us all (photons), thus Light is why we are Nothing.
 
     if n != "-n" or L != "-L" or G != "-G" or c != "-c":
-        print(f'Usage: python3 nlgc.py -n a.txt -L 1 -G 1 -c 0')
+        print(f'Usage: python3 god.py -n a.txt -L 1 -G 1 -c 0')
         return
 
     name = argv[2]
