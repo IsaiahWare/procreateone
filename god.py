@@ -54,7 +54,7 @@ class Printer:
         return _
 
 def begin():
-    # Thus, the amount of DNA, or Time, is dependent on God and the limit He (helium) chooses
+    # Thus, the amount of DNA, or Time, is dependent on God and the limit He (helium) chooses.
     # Thus, we can conclude that Helium is God and hydrogen is its beginnings.
     # We can also conclude that the building block of matter is actually Time.
     # Thus, anything that is equal to Time can be used as building blocks.

@@ -40,8 +40,8 @@ def life(n, L, G):
 
 
 def fermentation(DNA):
-    return DNA # First came DNA
+    return DNA # First came DNA.
 
 
 def seed(n, L, G, c):
-    return Printer.run(n, L, G, c) # Then came the seed
+    return Printer.run(n, L, G, c) # Then came the seed.
