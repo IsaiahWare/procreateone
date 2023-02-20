@@ -23,10 +23,6 @@ class Block:
 
     def get_frames(self) -> List[Frame]:
         return self._frames
-    
-    def b(self):
-        s = ''.join(str(self._frames))
-        return str(f'Block: {s}')
 
     def __repr__(self):
         s = ''.join(str(self._frames))
