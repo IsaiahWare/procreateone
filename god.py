@@ -69,7 +69,8 @@ def begin():
     n = argv[1]
     L = argv[3]
     G = argv[5]
-    c = argv[7]
+    c = argv[7] # Superposition (intersection of All)
+    
     if n != "-n" or L != "-L" or G != "-G" or c != "-c":
         print(f'Usage: python3 god.py -n a.txt -L 1 -G 1 -c 0')
         return
