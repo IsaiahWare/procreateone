@@ -191,3 +191,10 @@ Fermentation is simply a wrapper around Randomization.
 Randomization (Fermentation) is the intersection of All.
 
 They are equal.
+
+
+-- Dimensions --
+
+In the 4D space, everything in 3D space happens at the same time.
+
+Lower dimensions are constant in relation to the higher dimension.
