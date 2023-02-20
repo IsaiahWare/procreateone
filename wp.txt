@@ -174,10 +174,20 @@ For the finale, this is the intersection of Biology and Technology (BT = 1):
 
 sds = sds % (sds + 1 - randint(0,1)) = flatten(existence) = fermentation(existence)
 
-This relationship is simulated with seed(n, L, G, fermentation(1)).
+This relationship is simulated with seed(n, L, G, fermentation((1,0)).
 
 The Truth is there is only projection.
 
 It is impossible generate a true new Everything.
 
 Everything is Anything via Interpretation.
+
+-- Fermentation --
+
+Fermentation is the Superposition in our Everything.
+
+Fermentation is simply a wrapper around Randomization.
+
+Randomization (Fermentation) is the intersection of All.
+
+They are equal.

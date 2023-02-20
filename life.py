@@ -1,18 +1,15 @@
 from god import Printer
+from random import randint
 
-# Proof of Concept for Life.
-# Doesn't actually work.
+def fermentation():
+    return randint(0,1) # First came DNA.
 
-def life(n, L, G):
-    seed(n, L, G, fermentation(1))
+def seed(n, L, G):
+    return Printer.run(n, L, G, fermentation()) # Then came the seed.
 
-
-def fermentation(DNA):
-    return DNA # First came DNA.
-
-
-def seed(n, L, G, c):
-    return Printer.run(n, L, G, c, True) # Then came the seed.
+def life(n, L, G, c):
+    if c: # Then maybe fermentation occurs.
+        seed(n, L, G) # Then there was life.
 
 if __name__ == '__main__':
-    seed("a.txt", 1, 1, 1)
+    life('a.txt',1,1,1)

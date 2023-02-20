@@ -39,9 +39,9 @@ class All:
 
 class Printer:
     def run(name, limit, generations, connect=False):
-        with open(name, 'a' if connect else 'w') as f:
-            print(f'nLGc({argv[2]},{argv[4]},{argv[6]},{argv[8]})\n', file=f)
-            print(Printer.generate(limit, generations), file=f)
+        with open(name, 'a' if connect else 'w') as name:
+            print(f'nLGc({name},{limit},{generations},{connect})\n', file=name)
+            print(Printer.generate(limit, generations), file=name)
     def generate(limit, generations):
         _ = []
         g = 0
