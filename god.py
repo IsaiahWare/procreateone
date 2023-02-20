@@ -1,4 +1,5 @@
 from random import randint
+from sys import argv
 
 
 class Everything:
@@ -60,9 +61,25 @@ class Printer:
         return _
 
 
+def begin():
+    if len(argv) != 9:
+        print(f'Expected {9} arguments, but received {len(argv)}.')
+        return
+
+    n = argv[1]
+    L = argv[3]
+    G = argv[5]
+    c = argv[7]
+    if n != "-n" or L != "-L" or G != "-G" or c != "-c":
+        print(f'Usage: python3 god.py -n a.txt -L 1 -G 1 -c 0')
+        return
+
+    name = argv[2]
+    limit = int(argv[4])
+    generations = int(argv[6])
+    connect = int(argv[8])
+    Printer.run(name, limit, generations, connect)
+
+
 if __name__ == '__main__':
-    n = 'it.txt'
-    L = 1
-    G = 1
-    c = randint(0, 1)
-    Printer.run(n, L, G, c)
+    begin()
